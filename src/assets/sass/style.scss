@@ -1,0 +1,34 @@
+@import "null";
+@import "vars";
+@import "mixins";
+@import "blocks/page";
+@import "blocks/content";
+@import "blocks/header";
+@import "blocks/btn";
+@import "blocks/logo";
+@import "blocks/nav";
+@import "blocks/lang";
+@import "blocks/footer";
+@import "blocks/essay";
+@import "blocks/contacts";
+@import "blocks/fon_books";
+@import "blocks/modal";
+@import "blocks/services";
+@import "blocks/portfolio";
+
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 10px;
+    font-family: 'Montserrat', sans-serif !important;
+    color: $dark_text !important;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: $bg !important;
+    
+}
+
+
+

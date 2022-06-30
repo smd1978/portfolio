@@ -1,0 +1,13 @@
+.content {
+    flex: 1;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.content__title {
+    margin: 0 0 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+}

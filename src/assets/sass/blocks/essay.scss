@@ -1,0 +1,21 @@
+.essay {
+    display: flex;
+    flex-direction: column;
+}
+.essay__subtitle {
+    font-size: 1.3rem;
+    color: $dark_text;
+}
+.essay__title {
+    font-size: 2.5rem;
+    color: $dark_text;
+}
+.essay_me__description {
+    font-size: 1.2rem;
+}
+
+.row__essay .row{
+    margin-top: 2rem;
+    align-items:center;
+    
+}

@@ -1,0 +1,21 @@
+.service {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+
+    &__item {
+        padding: 5px;
+        
+        }
+    &__header{
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__title {
+    font-size: 1.4rem;
+    margin-left: 10px;
+    align-self: center;
+    }
+
+}

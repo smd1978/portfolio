@@ -1,0 +1,27 @@
+.footer{
+    padding-bottom: 2rem;
+}
+
+.container__footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.footer__social {
+    margin-right: 1rem;
+    align-items:center;
+}
+
+.footer__social-link{
+    align-items:center;
+}
+
+.social__img {
+    opacity: .3;
+
+    &--fb, &--inst {
+        width: 25px;
+        height: 25px;
+    }
+}

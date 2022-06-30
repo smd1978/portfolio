@@ -1,0 +1,25 @@
+.btn {
+
+   background: none;
+   border: 0;
+
+   &--light_yellow {
+        border: 2px solid $light_yellow;
+   }
+   border-radius: $radius_small;
+   padding: .5rem 1rem;
+   margin-top: 2rem;
+   font-size: 1.2rem;
+   line-height: 1.1rem;
+
+   transition: background .1s linear;
+
+   &:hover {
+    background-color: $light_yellow;
+    cursor: pointer;
+   }
+}
+.row {
+    align-items:center;
+}
+ 
