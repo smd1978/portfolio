@@ -397,6 +397,29 @@ article {
     border: 2px red solid;
 }
 
+.main_area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 500px;
+    height: 350px;
+    margin: 20px auto;
+    background-image: url("/assets/img/otkritaya-kniga-99.png");
+    background-repeat: no-repeat;
+    background-size: 700px auto;
+    background-position: center;
+}
+
+.title__items {
+    margin: 0px auto;
+    padding: 20px 30px;
+    width: 500px;
+}
+
 /* Slider */
 .slick-slider {
     position: relative;
