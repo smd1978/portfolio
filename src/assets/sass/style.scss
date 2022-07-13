@@ -1,6 +1,7 @@
 @import "null";
 @import "vars";
 @import "mixins";
+@import "fonts";
 @import "blocks/page";
 @import "blocks/content";
 @import "blocks/header";
@@ -16,18 +17,24 @@
 @import "blocks/services";
 @import "blocks/portfolio";
 @import "blocks/stoic_philosophers";
+@import "blocks/mainbook";
+@import "blocks/articles_position";
+@import "blocks/left__menu";
+@import "blocks/right__section";
 
-//vendors
+
+
+// vendors
 
 @import "vendors/slick";
 
 html {
-    font-size: 10px;
+    font-size: 12px;
 }
 
 body {
     margin: 10px;
-    font-family: 'Montserrat', sans-serif !important;
+    font-family:'Times New Roman', Times, serif !important;
     color: $dark_text !important;
     font-size: 1rem;
     line-height: 1.5;

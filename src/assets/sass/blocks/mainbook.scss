@@ -1,0 +1,45 @@
+// Стиль для фона книги
+
+.mainbook__area{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    margin: 20px auto;
+    background-image: url("/assets/img/otkritaya-kniga-99.png");
+    background-repeat: no-repeat;
+    background-size: 110% auto;
+    background-position: center;
+
+    position: relative;
+
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+// Стили для оглавления
+.title__link {
+    text-decoration: none;
+    color: $black;
+    line-height: 1.6;
+    outline:none;
+    cursor:pointer;
+}
+.title__link:hover {
+    text-decoration: none;
+    color: lighten($black, 20%);
+    border-bottom: 1px rgb(141, 141, 149) solid;
+}
+.title__link:visited {
+    text-decoration: none;
+    color: lighten($black, 10%);
+    border-bottom: 1px rgb(141, 141, 149) solid;
+}
+
+
+.title__items {
+    margin: 0px auto;
+    padding: 15px 0px;
+    // width: 600px;
+}
