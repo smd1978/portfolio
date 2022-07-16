@@ -1,4 +1,27 @@
 .left__menu {
     width: 15%;
-    
+    margin: 20px 0 0 0;
+}
+
+.title__items {
+    margin: 0px auto;
+    // padding: 15px 0px;
+}
+
+.title__link {
+    text-decoration: none;
+    color: $black;
+    line-height: 1.6;
+    outline:none;
+    cursor:pointer;
+}
+.title__link:hover {
+    text-decoration: none;
+    color: lighten($black, 20%);
+    border-bottom: 1px rgb(141, 141, 149) solid;
+}
+.title__link:visited {
+    text-decoration: none;
+    color: lighten($black, 10%);
+    border-bottom: 1px rgb(141, 141, 149) solid;
 }

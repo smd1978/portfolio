@@ -17,6 +17,26 @@ a:hover {
     text-decoration: none;
 }
 
+@-webkit-keyframes article {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes article {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 @font-face {
     font-family: "Georgia";
   src: url("../fonts/georgia/Georgia.ttf") format("truetype");
@@ -151,22 +171,6 @@ a:hover {
     color: #fff;
     background-color: #b88f4d;
     border-radius: 2rem;
-}
-
-.lang {
-    font-size: 1.2rem;
-    font-weight: 500;
-    text-align: right;
-    text-transform: uppercase;
-}
-
-.lang__item {
-    margin-left: 5px;
-    color: #4f4032;
-}
-
-.lang__item.active {
-    color: #b88f4d;
 }
 
 .footer {
@@ -428,10 +432,6 @@ article {
     height: 100%;
 }
 
-.link__article {
-    display: none;
-}
-
 .wrapper__article {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -442,95 +442,51 @@ article {
     flex-direction: row;
 }
 
-.first__page, .second__page {
-    width: 420px;
+.link__article {
+    display: none;
 }
 
-.article__about, .article {
-    width: 400px;
+.first__page, .second__page {
+    width: 50%;
+}
+
+.article {
+    max-width: 100%;
     padding: 25px 50px 5px 35px;
 }
 
-.about__name {
-    font-size: 18px;
-}
-
 .task__title {
-    display: inline;
+    display: inline-block;
     color: rgb(66, 37, 4);
     font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .task__text {
     color: rgb(66, 37, 4);
 }
 
-.task__title--green {
-    color: rgb(255, 255, 255);
+.link__article, .article__green, .article__about {
+    margin-bottom: 10px;
+    opacity: 0;
+    -webkit-animation: article 0.6s forwards;
+    animation: article 0.6s forwards;
+    line-height: 1.6;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.link__article .article__title--green, .article__green .article__title--green, .article__about .article__title--green {
+    color: black;
     background-color: rgb(102, 141, 81);
     padding: 1px 5px;
     text-align: center;
 }
 
-.task__text--green {
+.link__article .article__text--green, .article__green .article__text--green, .article__about .article__text--green {
     padding: 7px;
     color: rgb(92, 60, 23);
-}
-
-.link_01__about {
-    position: absolute;
-    opacity: 0;
-    -webkit-animation: article 0.6s forwards;
-    animation: article 0.6s forwards;
-    line-height: 1.6;
-}
-
-.link_01__article_01,
-.link_01__article_02,
-.link_01__article_03,
-.link_01__article_04,
-.link_01__article_05,
-.link_02__article_01,
-.link_02__article_02,
-.link_02__article_03 {
-    position: absolute;
-    opacity: 0;
-    -webkit-animation: article 0.6s forwards;
-    animation: article 0.6s forwards;
-}
-
-@-webkit-keyframes article {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes article {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.task4, .task5, .task6 {
-    background: rgb(177, 221, 153);
-    background: -webkit-gradient(linear, left top, left bottom, from(rgb(177, 221, 153)), to(rgb(255, 255, 255)));
-    background: -o-linear-gradient(top, rgb(177, 221, 153) 0%, rgb(255, 255, 255) 100%);
-    background: linear-gradient(180deg, rgb(177, 221, 153) 0%, rgb(255, 255, 255) 100%);
-}
-
-.task1, .task2, .task3 {
-    background: rgb(209, 195, 129);
-    background: -webkit-gradient(linear, left top, left bottom, from(rgb(209, 195, 129)), to(rgb(255, 255, 255)));
-    background: -o-linear-gradient(top, rgb(209, 195, 129) 0%, rgb(255, 255, 255) 100%);
-    background: linear-gradient(180deg, rgb(209, 195, 129) 0%, rgb(255, 255, 255) 100%);
 }
 
 .mainbook__area {
@@ -543,14 +499,22 @@ article {
     flex-direction: column;
     width: 60%;
     height: 100%;
-    margin: 20px auto;
+    margin: 20px auto 0 auto;
     background-image: url("/assets/img/otkritaya-kniga-99.png");
     background-repeat: no-repeat;
-    background-size: 110% auto;
     background-position: center;
     position: relative;
     -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
     box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.left__menu {
+    width: 15%;
+    margin: 20px 0 0 0;
+}
+
+.title__items {
+    margin: 0px auto;
 }
 
 .title__link {
@@ -573,71 +537,13 @@ article {
     border-bottom: 1px rgb(141, 141, 149) solid;
 }
 
-.title__items {
-    margin: 0px auto;
-    padding: 15px 0px;
-}
-
-.link_01__about {
-    width: 250px;
-    top: 300px;
-    left: 450px;
-}
-
-.link_01__article_01 {
-    width: 250px;
-    top: 100px;
-    left: 130px;
-}
-
-.link_01__article_02 {
-    width: 250px;
-    top: 220px;
-    left: 130px;
-}
-
-.link_01__article_03 {
-    width: 250px;
-    top: 390px;
-    left: 130px;
-}
-
-.link_01__article_04 {
-    width: 250px;
-    top: 400px;
-    right: 130px;
-}
-
-.link_01__article_05 {
-    width: 250px;
-    top: 200px;
-    right: 130px;
-}
-
-.link_02__article_01 {
-    width: 250px;
-    top: 150px;
-    left: 130px;
-}
-
-.link_02__article_02 {
-    width: 250px;
-    top: 100px;
-    right: 130px;
-}
-
-.link_02__article_03 {
-    width: 250px;
-    top: 400px;
-    left: 130px;
-}
-
-.left__menu {
-    width: 15%;
-}
-
 .right__section {
     width: 15%;
+    margin: 20px 0 0 0;
+}
+
+.about__name {
+    font-size: 18px;
 }
 
 /* Slider */

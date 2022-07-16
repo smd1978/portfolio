@@ -1,3 +1,4 @@
+//Обертка для страницы
 .wrapper__stoic {
     display: flex;
     flex-direction: row;
@@ -5,88 +6,44 @@
     height: 100%;
 }
 
-// Скрываем блоки
-.link__article {
-   
-    display: none;
-    }
-
+// Обертка статей
 .wrapper__article {
     display: flex;
     flex-direction: row;
 }
+
+    // Ссылка на статьи
+.link__article {
+    display: none; // Скрываем блоки
+    }
+
+    // Правая и левая страницы
 .first__page, .second__page {
-    width: 420px;
+    width: 50%; // размер каждой страницы из 2-х
 }
-.article__about, .article{
-    width: 400px;
+
+    // Статья
+.article{
+    max-width: 100%;
     padding: 25px 50px 5px 35px;
    
 }     
-.about__name {
-    font-size: 18px;
-}
+
+    // Заголовок статьи
 .task__title {
-    display: inline;
+    display: inline-block;
     color: rgb(66, 37, 4);
     font-weight: 600;
+    margin-bottom: 10px;
     }
-        
+       
+    // Текст статьи
 .task__text {
     color: rgb(66, 37, 4);
     }
-        
-    .task__title--green {
-    color: rgb(255, 255, 255);
-    background-color: rgb(102, 141, 81);
-    padding: 1px 5px;
-    text-align: center;
-    }
-        
-    .task__text--green{
-    padding: 7px;
-    color: rgb(92, 60, 23);
-    }
     
-// Об авторе    
-    .link_01__about {
-        position: absolute;
-        opacity: 0;
-        animation: article .6s forwards;
-        line-height: 1.6;
-    }
-
-    .link_01__article_01,
-    .link_01__article_02,
-    .link_01__article_03,
-    .link_01__article_04,
-    .link_01__article_05,
-    
-    .link_02__article_01,
-    .link_02__article_02,
-    .link_02__article_03 
-
-    {
-        position: absolute;
-        opacity: 0;
-        animation: article .6s forwards;
-        // border-radius: 5px;
-            
-        // -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
-        // -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
-        // box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
-    }
-    @keyframes article{
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-    }
-        
-    .task4, .task5, .task6 {
-    background: rgb(177,221,153);
-    background: linear-gradient(180deg, rgba(177,221,153,1) 0%, rgba(255,255,255,1) 100%);
-    }
-        
-    .task1, .task2, .task3 {
-    background: rgb(209,195,129);
-    background: linear-gradient(180deg, rgba(209,195,129,1) 0%, rgba(255,255,255,1) 100%);
+    .link__article, .article__green, .article__about {
+    margin-bottom: 10px;
+    @include article_fade;
+    @include article--green;
     }

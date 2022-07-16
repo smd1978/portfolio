@@ -1,4 +1,39 @@
-// @mixin {
+@mixin article_fade {
+    // Об авторе    
+  
+        opacity: 0;
+        animation: article .6s forwards;
+        line-height: 1.6;
 
-// }
+        border-radius: 5px;
+            
+        -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+        -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+        box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+
+    }
+
+@mixin article--green {
+
+        // Заголовок
+    .article__title--green {
+        color: black;
+        background-color: rgb(102, 141, 81);
+        padding: 1px 5px;
+        text-align: center;
+        }
+        // Текст
+        .article__text--green{
+        padding: 7px;
+        color: rgb(92, 60, 23);
+        
+        }
+        
+}
+
+@keyframes article{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    }
+
 

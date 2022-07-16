@@ -1,3 +1,14 @@
-.right__section{
+.right__section {
     width: 15%;
+    margin: 20px 0 0 0;
+}
+
+// Об авторе    
+.article__about {
+   
+//    @include article_fade;
+}
+// об авторе - заголовок
+.about__name {
+    font-size: 18px;
 }
